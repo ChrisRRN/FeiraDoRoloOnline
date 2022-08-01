@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+  <title>Feira do Rolo Online</title>
+  <link rel="icon" type="image/x-icon" href="/images/Feira2.png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Roboto:wght@300;400;700&family=Ubuntu:wght@300;400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+    integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </script>
+
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script> -->
+
+
+
+  <!-- Bootstrap Scripts-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+  <!-- CSS COOKIES -->
+
+  <style>
+    .cookieConsentContainer {
+      z-index: 999;
+      width: 350px;
+      min-height: 20px;
+      box-sizing: border-box;
+      padding: 30px 30px 30px 30px;
+      background: #232323;
+      overflow: hidden;
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      display: none
+    }
+
+    .cookieConsentContainer .cookieTitle a {
+      font-family: OpenSans, arial, sans-serif;
+      color: #fff;
+      font-size: 22px;
+      line-height: 20px;
+      display: block
+    }
+
+    .cookieConsentContainer .cookieDesc p {
+      margin: 0;
+      padding: 0;
+      font-family: OpenSans, arial, sans-serif;
+      color: #fff;
+      font-size: 13px;
+      line-height: 20px;
+      display: block;
+      margin-top: 10px
+    }
+
+    .cookieConsentContainer .cookieDesc a {
+      font-family: OpenSans, arial, sans-serif;
+      color: #fff;
+      text-decoration: underline
+    }
+
+    .cookieConsentContainer .cookieButton a {
+      display: inline-block;
+      font-family: OpenSans, arial, sans-serif;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      margin-top: 14px;
+      background: #000;
+      box-sizing: border-box;
+      padding: 15px 24px;
+      text-align: center;
+      transition: background .3s
+    }
+
+    .cookieConsentContainer .cookieButton a:hover {
+      cursor: pointer;
+      background: #3e9b67
+    }
+
+    @media (max-width:980px) {
+      .cookieConsentContainer {
+        bottom: 0 !important;
+        left: 0 !important;
+        width: 100% !important
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+
+  <section class="colored-section" id="title">
+
+
+    <!-- Nav Bar -->
+
+    <div
+      class="navbar navbar-inverse navbar-fixed-top navbar-fixed-bottom navbar-fixed-left navbar-fixed-bottom-nav navbar-static">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+
+        <img src="images/logo.png" id="logo" alt="logo"><a class="navbar-brand" href="index.html">
+          <font color="orange">Feira do Rolo </font>
+          <font color="#8CE563"> Online </font>
+        </a>
+
+        <!-- Search box  -->
+
+        <form class="form-inline my-2 my-lg-2">
+          <input class="form-control mr-lg-2" type="search" placeholder="Encontre o seu produto aqui :)"
+            aria-label="Search">
+
+        </form>
+
+        <button class="btn btn-primary my-2 my-lg-2" type="submit">Vai!</button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Especialidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Opinião</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Anúncios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Sobre Nós</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Mídias Sociais</a>
+            </li>
+            <li class="nav-item">
+              <a href="produtos.html" class="btn btn-warning" style="color: #000000;">Anunciar</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Banner -->
+
+  <img class="produtosIMG" src="images/produtos.jpg" alt="">
+
+  <!-- Features -->
+
+  <section class="white-section" id="features">
+
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="feature-box col-lg-4">
+          <i id="clicador" onclick="clicador(this)" class="icon fas fa-toilet-paper fa-4x"></i>
+          <h3 class="feature-title">Papel Usado</h3>
+
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i id="clicador2" onclick="clicador2(this)" class="icon fas fa-spider fa-4x"></i>
+          <h3 class="feature-title">Insetos Frescos</h3>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i id="clicador3" onclick="clicador3(this)" class="icon fas fa-ghost fa-4x"></i>
+          <h3 class="feature-title">Encontro com o Além</h3>
+
+        </div>
+      </div>
+
+      <div class=" row">
+        <div class="feature-box col-lg-4">
+          <i id="clicador4" onclick="clicador4(this)" class="icon fas fa-jedi fa-4x"></i>
+          <h3 class="feature-title">Sabres de Luz</h3>
+
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i id="clicador5" onclick="clicador5(this)" class="icon fas fa-bomb fa-4x"></i>
+          <h3 class="feature-title">Bombas</h3>
+
+        </div>
+        <div class="feature-box col-lg-4">
+          <i id="clicador6" onclick="clicador6(this)" class="icon fas fa-atom fa-4x"></i>
+          <h3 class="feature-title">Produtos Radioativos</h3>
+
+        </div>
+      </div>
+
+      <div class=" row">
+        <div class="feature-box col-lg-4">
+          <i id="clicador7" onclick="clicador7(this)" class="icon fas fa-cannabis fa-4x"></i>
+          <h3 class="feature-title">Produtos Naturais</h3>
+
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i id="clicador8" onclick="clicador8(this)" class="icon fas fa-igloo fa-4x"></i>
+          <h3 class="feature-title">Igloos para o Verão</h3>
+
+        </div>
+        <div class="feature-box col-lg-4">
+          <i id="clicador9" onclick="clicador9(this)" class="icon fas fa-lungs fa-4x"></i>
+          <h3 class="feature-title">Órgãos usados</h3>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section class="colored-section" id="testimonials">
+
+
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active container-fluid">
+          <h2 class="testimonial-text">Minhas Lacráias chegam sempre fresquinhas para meu café da manhã</h2>
+          <img class="testimonial-image" src="images/Lacraia.jpeg" alt="Lacraia">
+          <br><em>Pipiu, Marapendi</em>
+        </div>
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">Escovo meus dentes todos os dias com Césio 137 que a feira me manda</h2>
+          <img class="testimonial-image" src="images/cesio.jpeg" alt="lady-profile">
+          <br><em>Bilica Tilica, Tibiriçá</em>
+        </div>
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">Vendi minha sogra por um ótimo preço e sou uma pessoa mais feliz. Super recomendo
+            a Feira do Rolo Online.</h2>
+          <img class="testimonial-image" src="images/sogra.jpeg" alt="lady-profile">
+          <br><em>Chupetão, Illinois</em>
+        </div>
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">O único lugar onde comprei um fígado novo para substituir o meu usado foi aqui.
+            Inclusive veio com garantia.</h2>
+          <img class="testimonial-image" src="images/Figado.jpeg" alt="lady-profile">
+          <br><em>Marilda Brito, Bombinhas</em>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+  </section>
+
+
+
+
+
+  <!-- Pricing -->
+
+  <section class="white-section" id="pricing">
+    <br><br>
+
+    <h2 class="section-heading">Anúncios recentes</h2>
+    <!-- <p>Simple and affordable price plans for your and your dog.</p> -->
+    <div class="row">
+      <div class="produto row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/fiat.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Fiat Turbinado</h5>
+              <p class="card-text">R$3.500,00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/moto.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Moto Turbo 2022</h5>
+              <p class="card-text">R$ 350,00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/gravata.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Gravata Suada</h5>
+              <p class="card-text">R$ 25,00 o par</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/nota.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nota Rara</h5>
+              <p class="card-text">R$ 25.000,00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="produto row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/burger.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Apex Burger</h5>
+              <p class="card-text">R$10,00 Cada </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/lula.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Lula no Palito</h5>
+              <p class="card-text">R$10,00 Cada</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/frango.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">João Frango Consultoria</h5>
+              <p class="card-text">R$ 10,00 a hora para receber nossa sapiencia</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/game.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">PS6 - última geração</h5>
+              <p class="card-text">R$35.000,00 Mega Promoção 🏷️</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="produto row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/heroi.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Amigos de Fim de Semana</h5>
+              <p class="card-text">R$ 35,00 a hora</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/sogra2.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sogra Modelo 1934</h5>
+              <p class="card-text">R$ 1,00 Pouco uso, ocasião única.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/sabre.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sabre de Luz - Pertenceu ao próprio Anakin</h5>
+              <p class="card-text">R$ 350.000,00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/barbie.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Barbie 2022</h5>
+              <p class="card-text">R$ 350,00. obs.: não paga frete ela é mais leve que as demais</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section class="colored-section" id="cta">
+
+    <div class="container-fluid">
+
+      <h3 class="big-heading">Sobre Nós</h3>
+      <em>A Feira do Rolo Online foi criada para dar oportunidade de você, aprendiz de mago, a se livrar dos produtos
+        que
+        não quer mais ou não tem mais sentido ter em sua casa e poder comprar mais tranqueiras que, com certeza, você
+        não está precisando.
+        <br>
+        Criado em julho de 2022 pelos membros Christiaan Andrade, Joaquim Carvalho, Michele Sugimoto e Marcos Yamaguti,
+        a
+        Feira do Rolo Onine veio para proporcionar a melhor experiência de compra ou venda para você aluno da SouLCode
+        grupo BC21!
+        Conectamos pessoas que buscam comprar, trocar ou vender. Desde o seu Uno quadrado com escada no teto, badges de
+        100 pontos do Trailhead, uma unidade de questões do Lingopass, além de outros produtos novos e produtos usados
+        de
+        forma fácil e rápida. Nossa comunidade se conecta de maneira colaborativa por meio da compra e venda de produtos
+        usados com ofertas imperdíveis.<p>
+
+        <p><b style="color: #F99D53;">A Feira do Rolo Online é alternativa para venda de produtos e serviços!</b></p>
+
+        <em>Desapegue dos produtos usados que você não aguenta mais e tenha um dinherinho com suas vendas!
+          Venda seus serviços de desenvolvedor, seu rim usado, o hambúrguer do ApexBurguer, ou outros produtos com
+          os melhores preços do mercado e ofertas de arrepiar.</em>
+        <br><br>
+        <b style="color: #F99D53;">PARA QUEM QUER VENDER PRODUTOS NOVOS OU PRODUTOS USADOS:</b>
+        <br><br>
+        <b style="color: #F99D53;">Crie anúncios de vendas e ofertas</b>
+        <br><br>
+        Aqui é fácil criar anúncios de vendas para qualquer produto usado ou novo. Em poucos passos você anuncia seu
+        produto em uma de nossas categorias de compras
+        <br><br>
+        <b style="color: #F99D53;">Destaque seu produto com anúncios de vendas</b>
+        <br><br>
+        Para acelerar sua venda ou troca de um produto você ainda pode destacar seus anúncios a qualquer hora.
+        Assim, suas ofertas serão vistas pelos seus coleguinhas de aula que buscam comprar produtos novos, produtos
+        usados mais rápidos.
+        <br><br>
+        <b style="color: #F99D53;">PARA QUEM QUER COMPRAR PRODUTOS NOVOS OU PRODUTOS USADOS:</b>
+        <br><br>
+        Faça compras online se conectando com quem quer vender! Encontre anúncios de roupas velhas, ofertas de sabre
+        de luz na maior plataforma de compras e vendas de produtos novos e usados do mercado!
+        </p>
+      </em>
+    </div>
+  </section>
+
+
+  <!-- WEB TO LEAD -->
+
+  <section class="white-section" id="contato">
+    <div class="container">
+
+      <h3 class="big-heading">Contato</h3>
+      <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+        <input type=hidden name="oid" value="00D8a000002tJie">
+        <input type=hidden name="retURL"
+          value="https://www.acejundiai.com.br/wp-content/uploads/2020/06/CADASTRO-REALIZADO-COM-SUCESSO-1.jpg">
+        <div class="form-row">
+          <div class="col-md-3 mb-3">
+            <label for="first_name">Nome</label>
+            <input type="text" class="form-control" id="first_name" name="first_name" placeholder="Primeiro Nome"
+              required>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="last_name">Sobrenome</label>
+            <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Sobrenome" required>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <label for="email">Email</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroupPrepend2">@</span>
+              </div>
+              <input type="text" class="form-control" id="email" name="email" placeholder="E-mail" required>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <label for="CPF">CPF</label>
+            <input type="text" class="form-control" id="00N8a00000E7E9a" name="00N8a00000E7E9a" size="20" maxlength="14"
+              placeholder="CPF" required>
+          </div>
+        </div>
+    
+    <div class="form-row">
+      <div class="col-md-6 mb-2">
+        <label for="city">Cidade</label>
+        <input type="text" class="form-control" id="city" name="city" placeholder="Cidade" required>
+      </div>
+      <div class="col-md-6 mb-2">
+        <label for="company">Empresa</label>
+        <input type="text" class="form-control" id="company" name="company" placeholder="Empresa" required>
+      </div>
+    </div>
+    <button class="btn btn-primary" type="submit" name="submit">Enviar</button>
+    </form>
+    </div>
+  </div>
+  </section>
+  <br>
+
+
+  <!-- Footer -->
+
+  <footer class="colored-section" id="footer1">
+    <div class="container-fluidFooter">
+      <a class="linkFooter" target=”_blank” href="https://www.facebook.com/SoulCodeAcademy"><i
+          class="social-icon fab fa-facebook-f"></i></a>
+      <a class="linkFooter" target=”_blank” href="https://twitter.com/soulcodeacademy"><i
+          class="social-icon fab fa-twitter"></i></a>
+      <a class="linkFooter" target=”_blank” href="https://www.instagram.com/soulcodeacademy/"><i
+          class="social-icon fab fa-instagram"></i></a>
+
+      <p>© Copyright 2022 Feira do Rolo Online</p>
+    </div>
+  </footer>
+
+  <script src="js/javascript.js"></script>
+  <script>var purecookieTitle="Cookies",purecookieDesc="Utilizamos cookies para que você tenha a melhor experiência do nosso site. Por sua visita contínua ao nosso site, sem alterar suas configurações, você concorda com o uso de cookies da Feira do Rolo Online..",purecookieLink='<a href="https://www.cssscript.com/privacy-policy/" target="_blank">Saiba mais</a>',purecookieButton="Entendi";function pureFadeIn(e,o){var i=document.getElementById(e);i.style.opacity=0,i.style.display=o||"block",function e(){var o=parseFloat(i.style.opacity);(o+=.02)>1||(i.style.opacity=o,requestAnimationFrame(e))}()}function pureFadeOut(e){var o=document.getElementById(e);o.style.opacity=1,function e(){(o.style.opacity -= .02) < 0 ? o.style.display = "none" : requestAnimationFrame(e)}()}function setCookie(e,o,i){var t="";if(i){var n=new Date;n.setTime(n.getTime()+24*i*60*60*1e3),t="; expires="+n.toUTCString()}document.cookie=e+"="+(o||"")+t+"; path=/"}function getCookie(e){for(var o=e+"=",i=document.cookie.split(";"),t=0;t<i.length;t++){for(var n=i[t];" "==n.charAt(0);)n=n.substring(1,n.length);if(0==n.indexOf(o))return n.substring(o.length,n.length)}return null}function eraseCookie(e){document.cookie = e + "=; Max-Age=-99999999;"}function cookieConsent(){getCookie("purecookieDismiss") || (document.body.innerHTML += '<div class="cookieConsentContainer" id="cookieConsentContainer"><div class="cookieTitle"><a>' + purecookieTitle + '</a></div><div class="cookieDesc"><p>' + purecookieDesc + " " + purecookieLink + '</p></div><div class="cookieButton"><a onClick="purecookieDismiss();">' + purecookieButton + "</a></div></div>", pureFadeIn("cookieConsentContainer"))}function purecookieDismiss(){setCookie("purecookieDismiss", "1", 7), pureFadeOut("cookieConsentContainer")}window.onload=function(){cookieConsent()};</script>
+
+</body>
+
+</html>
